@@ -8,7 +8,7 @@ end
 
 post '/users' do
   @user = User.new(params[:user]) #create new user
-  
+
   if @user.save #saves new user or returns false if unsuccessful
     redirect '/users/#{@user.id}' #redirect back to users index page
   else

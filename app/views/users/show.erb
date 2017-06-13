@@ -1,0 +1,16 @@
+<h1>You're Posts<h1>
+<br>
+
+  <main role="main">
+  <p>Your Post List:</p>
+  <ul class="channels-list no-bullets no-padding">
+    <% @posts.each do |post| %>
+      <li class="channel-item pad-b-4">
+        <a href="/posts/<%= post.id %>"><%= post.title %></a>
+      </li>
+    <% end %>
+  </ul>
+  <div>
+  	<h4>Total All Time Posts:<h4><%= Post.all.count %>
+  </div>
+</main>
