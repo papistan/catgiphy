@@ -1,18 +1,21 @@
 <h1>SIGN UP</h1>
  
-<form method='post' action='/users'>
+<form class="form-style-4" method='post' action='/users'>
 
-  <label for="username">Username:</label>
-  <input type="text" name ="user[username]" />
+  <label for="username"><span>Enter Your Username</span></label>
+  <input type="text" name ="user[username]" required="true" />
+  <br>
   <br>
 
-  <label for="email">Email:</label>
-  <input type="email" name ="user[email]" />
+  <label for="email"><span>Email Address</span></label>
+  <input type="email" name ="user[email]" required="true"/>
+  <br>
   <br>
 
   <label for="password">Password:</label>
-  <input type="text" name="user[password]">
+  <input type="text" name="user[password]" required="true">
   <br>
-
+  <br>
+  
   <input type="submit" value='Sign up'>
 </form>

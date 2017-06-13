@@ -5,5 +5,6 @@ class CreateComments < ActiveRecord::Migration
   		t.string :comment
 
   		t.timestamps
+  	end
   end
 end

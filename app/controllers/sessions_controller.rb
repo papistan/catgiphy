@@ -5,14 +5,14 @@ end
 post '/sessions' do
   @user = User.find_by(email: params[:email])
   if @user.authenticate(params[:password])
-    session[:id] = @user.id
+    login(@user)
     erb :'index'
   else
     erb :'/sessions/new'
   end
 end
 
-delete '/sessions' do
+get '/logout' do
   session[:id] = nil
   redirect '/sessions'
 end

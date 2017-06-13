@@ -7,9 +7,7 @@
     See: http://necolas.github.com/normalize.css/
   -->
   <link rel="stylesheet" href="/css/normalize.css">
-  <!--
-    application.css is where you put your styles
-  -->
+  <link rel="stylesheet" href="/css/application.css">
   <link rel="stylesheet" href="/css/application.css">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
@@ -18,17 +16,20 @@
   <title></title>
 </head>
 <body>
-  <header role="banner">
-    <div>
-      <nav>
-        <ul>
-          <li><a href="/users">sign up</a><li>
-          <li><a href="/sessions">login</a><li>
-          <li><a href="/logout">logout</a><li>
-        </ul>
-      </nav>
-    </div>
-    </header>
+  
+<ul class="navbar">
+  <li id="slide_to_left"><div id="cat"><img id="catimg" src="https://s-media-cache-ak0.pinimg.com/736x/e0/70/40/e07040311f1d28508e4d1e256839aa66.jpg"></div></li>
+  <li id="slide_to_right"><a href="/">home</a></li>
+  <% if !logged_in? %>
+    <li><a href="/sessions">login</a></li>
+    <li><a href="/users/new">sign up</a></li>
+  <% else %>
+    <li id="slide_to_right"><a href="/posts/new">mew post</a></li>
+    <li id="slide_to_right"><a href="/logout">logout</a></li>
+    <li id="slide_to_right"><a href="/users/<%= current_user.id %>"><%= current_user.username %>'s posts</a></li>
+  <% end %>
+</ul>
+
 
   <%= yield %>
 </body>

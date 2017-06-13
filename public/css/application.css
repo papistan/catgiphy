@@ -1,0 +1,149 @@
+.container {
+  margin: 20px auto;
+  width: 600px;
+  padding: 20px 20px 20px 20px;
+  border: 1px solid black;
+}
+
+.container h3 {
+  text-decoration: underline;
+}
+
+.clearfix a {
+  text-decoration: none;
+  color: white;
+}
+
+th {
+  text-align: left;
+}
+
+#cat {
+    width: 75px;
+    height: 50px;
+}
+
+#catimg {
+   max-width: 100%;
+   height: auto;
+}
+
+
+.navbar a {
+  display: block;
+  padding: 8px;
+  background-color: #ff33cc;
+}
+
+.navbar li {
+  float: left;
+  /*border-right: 2px solid #ffffff;*/
+}
+
+.navbar li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navbar li a:hover {
+  background-color: #9900cc;
+}
+
+#welcome_header {
+  text-align: center;
+}
+
+.navbar #slide_to_right {
+  float: right;
+  /*border-left: 1px solid #ffffff;*/
+}
+
+.navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #ff33cc;
+}
+
+
+/*form css*/
+
+
+<style type="text/css">
+.form-style-4{
+    width: 450px;
+    font-size: 16px;
+    background: black;
+    padding: 30px 30px 15px 30px;
+    border: 5px solid #53687E;
+}
+.form-style-4 input[type=submit],
+.form-style-4 input[type=button],
+.form-style-4 input[type=text],
+.form-style-4 input[type=email],
+.form-style-4 textarea,
+.form-style-4 label
+{
+    font-family: Helvetica, Arial, Times, serif;
+    font-size: 16px;
+    color: black;
+
+}
+.form-style-4 label {
+    display:block;
+    margin-bottom: 10px;
+}
+/*.form-style-4 label > span{
+    display: inline-block;
+    float: left;
+    width: 150px;
+}*/
+.form-style-4 input[type=text],
+.form-style-4 input[type=email] 
+{
+    background: transparent;
+    border: none;
+    border-bottom: 1px dashed #83A4C5;
+    width: 275px;
+    outline: none;
+    padding: 0px 0px 0px 0px;
+    font-style: italic;
+}
+.form-style-4 textarea{
+    font-style: italic;
+    padding: 0px 0px 0px 0px;
+    background: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 1px dashed #83A4C5;
+    width: 275px;
+    overflow: hidden;
+    resize:none;
+    height:20px;
+}
+
+.form-style-4 textarea:focus, 
+.form-style-4 input[type=text]:focus,
+.form-style-4 input[type=email]:focus,
+.form-style-4 input[type=email] :focus
+{
+    border-bottom: 1px dashed #D9FFA9;
+}
+
+.form-style-4 input[type=submit],
+.form-style-4 input[type=button]{
+    background: #576E86;
+    border: none;
+    padding: 8px 10px 8px 10px;
+    border-radius: 5px;
+    color: black;
+}
+.form-style-4 input[type=submit]:hover,
+.form-style-4 input[type=button]:hover{
+background: black;
+}
+</style>
