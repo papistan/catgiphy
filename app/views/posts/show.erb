@@ -1,0 +1,11 @@
+<h1><%= @post.title %><h1>
+<br>
+
+  <main role="main">
+      <a/><%= @post.comments.each do |comment | %></a>
+       <li>
+        <a href="/post/<%= @post.id %>/comments/<%= comment.id %>"><%= comment.title %></a>
+      </li>
+      <% end %>
+  </div>
+</main>
