@@ -18,6 +18,7 @@ $("div").on("submit", "form", function(e){
 	}).done(function(response){
 		$form.hide();
 		$container.append('<img src="/giphy.gif">');
+		$container.hide();
 		$container.append(response);
 	})
 })

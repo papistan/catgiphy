@@ -1,11 +1,21 @@
-<h1><%= @post.title %><h1>
-<br>
+<h2>Post</h2>
+<div class="container post">
+<article id="<%= @post.id %>">
+  <h2><%= @post.title %></a></h2>
+  <p>
+    <span class='Body'><%= @post.comment %></span>
+    <span><p>Posted At:</p> <%= @post.updated_at %></span>
+  </p>
+  <ul class="container post-comments">
+  <span><h2>Comments </h2><p><%= @post.comments.count %></p></span>
+  <% @post.comments.each do |comment| %>
+    <li id="<%= comment.id %>">
+        <span class='Body'><%= comment.comment %></span>
+        <span><p>Posted At:</p> <%= comment.updated_at %></span>
+    </li>
+  <% end %>
+  </ul >
+  <%= erb :'/comments/new', :layout => false %>
+</article>
+</div>
 
-  <main role="main">
-      <a/><%= @post.comments.each do |comment | %></a>
-       <li>
-        <a href="/post/<%= @post.id %>/comments/<%= comment.id %>"><%= comment.title %></a>
-      </li>
-      <% end %>
-  </div>
-</main>

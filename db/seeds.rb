@@ -9,3 +9,24 @@ if User.count < 10
       User.create(user)
   end
 end
+
+if Post.count < 30
+  30.times do
+    post = {}
+    post[:title] = Faker::ChuckNorris.fact
+    post[:comment] = Faker::ChuckNorris.fact
+    post[:user_id] = rand(1..10)
+    Post.create(post)
+  end 
+end
+
+if Comment.count < 50
+  50.times do
+    comment = {}
+    comment[:title] = Faker::ChuckNorris.fact
+    comment[:comment] = Faker::ChuckNorris.fact
+    comment[:user_id] = rand(1..10)
+    comment[:post_id] = rand(1..30)
+    Comment.create(comment)
+  end 
+end

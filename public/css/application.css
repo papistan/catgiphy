@@ -1,3 +1,16 @@
+
+.body {
+   counter-reset:section;
+  background-color: #F6F6EF;
+  font-family: Verdana;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+article {
+  margin: 5px 5px;
+}
+
 .container {
   margin: 20px auto;
   width: 600px;
