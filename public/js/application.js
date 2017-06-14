@@ -1,7 +1,24 @@
 $(document).ready(function() {
-  // This is called after the document has loaded in its entirety
-  // This guarantees that any elements we bind to will exist on the page
-  // when we try to bind to them
-
-  // See: http://docs.jquery.com/Tutorials:Introducing_$(document).ready()
+	catspload();
 });
+
+
+var catspload = function(){ 
+$("div").on("submit", "form", function(e){
+	e.preventDefault()
+	var $form = $(this)
+	var $container = $form.closest("div")
+	var url = $form.attr("action")
+	var method = $form.attr("method")
+	var data = $form.serialize()
+	$.ajax({
+	  url: url,
+	  type: method,
+	  data: data
+	}).done(function(response){
+		$form.hide();
+		$container.append('<img src="/giphy.gif">');
+		$container.append(response);
+	})
+})
+}
