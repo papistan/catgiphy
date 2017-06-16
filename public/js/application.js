@@ -75,11 +75,10 @@ $("div").on("submit", "form", function(e){
 
 var giphyzSearch = function(){ 
 	$("#giphy_container").on("submit", "#sign-up", function(e){
-		e.preventDefault();
+	e.preventDefault();
 
-
-		var $form = $(this)
-		var url = $form.attr("action")
+	var $form = $(this);
+	var url = $form.attr("action")
 	var method = $form.attr("method")
 	var data = $form.serialize()
 	
@@ -88,8 +87,9 @@ var giphyzSearch = function(){
 	  type: method,
 	  data: data
 	}).done(function(response){
-		$form.hide();
-		
+		// $form.hide();
+		console.log(response);
+		$("#show").prepend(response);
 	})
-
+})
 }

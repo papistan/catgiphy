@@ -20,6 +20,6 @@ end
 
 get '/logout' do
   session[:id] = nil
-  redirect '/sessions'
+  redirect '/'
 end
 
