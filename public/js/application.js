@@ -1,5 +1,6 @@
 $(document).ready(function() {
 	catspload();
+	giphy();
 });
 
 
@@ -22,4 +23,10 @@ $("div").on("submit", "form", function(e){
 		$container.append(response);
 	})
 })
+}
+
+
+var giphy = function(){ 
+	
+	
 }
