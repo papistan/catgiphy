@@ -1,8 +1,11 @@
 
 get '/users/new' do
 
-  erb :'users/new' #show new users view
-
+  if request.xhr?
+    erb :'users/new', layout: false
+  else
+    erb :'users/new'
+  end
 end
 
 
@@ -10,8 +13,8 @@ post '/users' do
   @user = User.new(params[:user]) #create new user
 
   if @user.save 
-    p @user.id
-    redirect "/users/#{@user.id}"
+    login(@user)
+    redirect "/index"
   else
     erb :'users/new' # show new users view again(potentially displaying errors)
   end

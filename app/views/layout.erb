@@ -21,16 +21,19 @@
   <li id="slide_to_left"><div id="cat"><img id="catimg" src="https://s-media-cache-ak0.pinimg.com/736x/e0/70/40/e07040311f1d28508e4d1e256839aa66.jpg"></div></li>
   <li id="slide_to_right"><a href="/">home</a></li>
   <% if !logged_in? %>
-    <li><a href="/sessions">login</a></li>
-    <li><a href="/users/new">sign up</a></li>
+    <li ><a class="loginz" href="/sessions">login</a></li>
+    <li><a class="signupz" href="/users/new">sign up</a></li>
   <% else %>
     <li id="slide_to_right"><a href="/posts/new">mew post</a></li>
-    <li id="slide_to_right"><a href="/logout">logout</a></li>
+    <li  id="slide_to_right"><a href="/logout">logout</a></li>
     <li id="slide_to_right"><a href="/users/<%= current_user.id %>"><%= current_user.username %>'s posts</a></li>
   <% end %>
 </ul>
 
-
+<% if !logged_in? %>
+ <h1 id="loginread">log in ^^ for catgiphys</h1>
+ <div><img id="catz" src="http://www.okayplayer.com/wp-content/uploads/2014/10/the-roots-cats-lasers-tonight-show.gif"></div>
+<% end %>
   <%= yield %>
 </body>
 </html>
