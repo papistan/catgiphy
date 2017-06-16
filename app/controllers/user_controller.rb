@@ -14,7 +14,7 @@ post '/users' do
 
   if @user.save 
     login(@user)
-    redirect "/index"
+    redirect "/"
   else
     erb :'users/new' # show new users view again(potentially displaying errors)
   end

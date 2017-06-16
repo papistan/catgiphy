@@ -1,8 +1,16 @@
-<form id="sign-up" method="post" action="/giphys">
-  <p>
-    <label for="search">Search:</label>
-    <p><input class="input-group-input" type="text" name="giphy[search_term]"> + CAT </p>
-  </p>
+
+
+
+<div id="new_giphy" class="row">
+  <h2>Get cat giphy's here:</h2>
+  <form class="col s12" id="sign-up" method="post" action="/giphys">  
+    <div class="row">
+      <div class="input-field col s6">
+				<input class="input-group-input" placeholder="search word" type="text" name="giphy[search_term]">
+    		<p><label for="search"></label>+ CAT</p>
+    	</div>
+    </div>
   <!-- BUTTON -->
   <input class="btn btn-primary" type="submit" value="Search" class="button">
-</form>
+	</form>
+</div>

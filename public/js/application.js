@@ -2,7 +2,8 @@ $(document).ready(function() {
 	signUp();
 	logInz();
 	catspload();
-	giphyzSearch()
+	giphyzSearch();
+	$('.carousel').carousel();
 });
 
 

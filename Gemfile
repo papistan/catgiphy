@@ -14,7 +14,7 @@ gem 'rake'
 
 gem 'bcrypt'
 gem 'json'
-
+gem 'materialize-sass'
 gem 'shotgun', '~>0.9.1'
 
 group :test do

@@ -1,4 +1,6 @@
 
+
+
 .body {
    counter-reset:section;
   background-color: #F6F6EF;
@@ -6,6 +8,32 @@
   max-width: 700px;
   margin: 0 auto;
 }
+
+#loginread{
+  position: fixed;
+  top: 2%;
+  left: 25%;
+}
+
+#new_giphy {
+  position: fixed;
+  top: 20%;
+  left: 10%;
+}
+
+.new_user {
+  position: fixed;
+  top: 20%;
+  left: 10%;
+}
+
+/*#catz {
+  position: fixed;
+  top: 15%;
+  left: 25%;
+  /*margin-top: -50px;
+  margin-left: -100px;*/
+}*/
 
 article {
   margin: 5px 5px;
@@ -95,7 +123,11 @@ th {
     border: 5px solid #53687E;
 }
 .form-style-4 input[type=submit],
+
+
 .form-style-4 input[type=button],
+
+/*
 .form-style-4 input[type=text],
 .form-style-4 input[type=email],
 .form-style-4 textarea,
@@ -108,14 +140,14 @@ th {
 }
 .form-style-4 label {
     display:block;
-    margin-bottom: 10px;
+    margin-bottom: 10px;*/
 }
 /*.form-style-4 label > span{
     display: inline-block;
     float: left;
     width: 150px;
-}*/
-.form-style-4 input[type=text],
+}
+/*.form-style-4 input[type=text],
 .form-style-4 input[type=email] 
 {
     background: transparent;
@@ -158,5 +190,5 @@ th {
 .form-style-4 input[type=submit]:hover,
 .form-style-4 input[type=button]:hover{
 background: black;
-}
-</style>
+}*/
+</style>*/
